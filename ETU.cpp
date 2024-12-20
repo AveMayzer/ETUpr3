@@ -309,12 +309,14 @@ int main() {
         cin >> choice;
         printNewLine(1);
         switch (choice) {
-            case 1: sumToElementsMatrix(ptr, N); printMatrix(ptr, N); printNewLine(N + 1); break;
-            case 2: delToElementsMatrix(ptr, N); printMatrix(ptr, N); printNewLine(N + 1); break;
-            case 3: multToElementsMatrix(ptr, N); printMatrix(ptr, N); printNewLine(N + 1); break;
-            case 4: divToElementsMatrix(ptr, N); printMatrix(ptr, N); printNewLine(N + 1); break;
+            case 1: sumToElementsMatrix(ptr, N); break;
+            case 2: delToElementsMatrix(ptr, N); break;
+            case 3: multToElementsMatrix(ptr, N); break;
+            case 4: divToElementsMatrix(ptr, N); break;
             case 5: started = false; break;
         }
+        printMatrix(ptr, N);
+        printNewLine(N + 1);
     }
     return 0;
 }
